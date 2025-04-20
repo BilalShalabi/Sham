@@ -24,14 +24,14 @@ public class ItemDA implements ItemDAI{
 
 
     private void createInitialData() {
-        items.add(new Item(1,"Syrian bab al hara", "Syrian", "Traditional syrian bab al hara outfit for men", new ItemType("Adult", 100, 5, 5, 5), new ItemType("Child", 50, 5, 5, 5), R.drawable.item, R.drawable.item11));
-        items.add(new Item(2,"kufyah outfit", "Syrian", "Traditional syrian with kufyah colors outfit for men", new ItemType("Adult", 120, 5, 5, 5), new ItemType("Child", 55, 5, 5, 5), R.drawable.item2, R.drawable.item22));
-        items.add(new Item(3,"Labanese Mukhtar", "Lebanese", "Traditional Labanese outfit for men", new ItemType("Adult", 150, 5, 5, 5), new ItemType("Child", 80, 5, 5, 5), R.drawable.item3, R.drawable.item3));
-        items.add(new Item(4,"Labanese Traditional", "Lebanese", "Traditional Labanes outfit for men ", new ItemType("Adult", 120, 5, 5, 5), new ItemType("Child", 55, 5, 5, 5), R.drawable.item4, R.drawable.item4));
-        items.add(new Item(5,"Paletinian Traditional", "Palestinian", "Traditional Palestinian outfit for men", new ItemType("Adult", 100, 5, 5, 5), new ItemType("Child", 40, 5, 5, 5), R.drawable.item5, R.drawable.item5));
-        items.add(new Item(6,"Paletinian National", "Palestinian", "National Palestinian outfit with kufyah for men", new ItemType("Adult", 120, 5, 5, 5), new ItemType("Child", 60, 5, 5, 5), R.drawable.item6, R.drawable.item66));
-        items.add(new Item(7,"Jordanian National", "Jordanian", "Traditional Jordanian outfit for men", new ItemType("Adult", 130, 5, 5, 5), new ItemType("Child", 60, 5, 5, 5), R.drawable.item7, R.drawable.item7));
-        items.add(new Item(8,"Jordanian Sheikh", "Jordanian", "National Jordanian outfit for men", new ItemType("Adult", 110, 5, 5, 5), new ItemType("Child", 55, 5, 5, 5), R.drawable.item8, R.drawable.item8));
+        items.add(new Item(1,"Syrian bab al hara", "Syrian", "Traditional syrian bab al hara outfit for men", new ItemType("Adult", 100, 10, 10, 10), new ItemType("Child", 50, 5, 5, 5), R.drawable.item, R.drawable.item11));
+        items.add(new Item(2,"kufyah outfit", "Syrian", "Traditional syrian with kufyah colors outfit for men", new ItemType("Adult", 120, 10, 10, 10), new ItemType("Child", 55, 5, 5, 5), R.drawable.item2, R.drawable.item22));
+        items.add(new Item(3,"Labanese Mukhtar", "Lebanese", "Traditional Labanese outfit for men", new ItemType("Adult", 150, 10, 10, 10), new ItemType("Child", 80, 5, 5, 5), R.drawable.item3, R.drawable.item3));
+        items.add(new Item(4,"Labanese Traditional", "Lebanese", "Traditional Labanes outfit for men ", new ItemType("Adult", 120, 10, 10, 10), new ItemType("Child", 55, 5, 5, 5), R.drawable.item4, R.drawable.item4));
+        items.add(new Item(5,"Paletinian Traditional", "Palestinian", "Traditional Palestinian outfit for men", new ItemType("Adult", 100, 10, 10, 10), new ItemType("Child", 40, 5, 5, 5), R.drawable.item5, R.drawable.item5));
+        items.add(new Item(6,"Paletinian National", "Palestinian", "National Palestinian outfit with kufyah for men", new ItemType("Adult", 120, 10, 10, 10), new ItemType("Child", 60, 5, 5, 5), R.drawable.item6, R.drawable.item66));
+        items.add(new Item(7,"Jordanian National", "Jordanian", "Traditional Jordanian outfit for men", new ItemType("Adult", 130, 10, 10, 10), new ItemType("Child", 60, 5, 5, 5), R.drawable.item7, R.drawable.item7));
+        items.add(new Item(8,"Jordanian Sheikh", "Jordanian", "National Jordanian outfit for men", new ItemType("Adult", 110, 10, 10, 10), new ItemType("Child", 55, 5, 5, 5), R.drawable.item8, R.drawable.item8));
 
     }
 
