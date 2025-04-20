@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Sham</string>
+    <string name="logo">LOGO</string>
+    <string name="search_hint">Search for outfit</string>
+    <string name="item">item</string>
+    <string name="search">Search</string>
+    <string name="add">Add To Cart</string>
+    <string name="size">Size:</string>
+    <string name="type">Type:</string>
+    <string name="adult">Adult</string>
+    <string name="child">Child</string>
+    <string name="description">Description</string>
+    <string name="plus">plus</string>
+    <string name="minus">minus</string>
+    <string name="oneItem">1</string>
+    <string name="cart">cart</string>
+    <string name="total">99999$</string>
+    <string name="proceed">Proceed</string>
+    <string name="back">Back</string>
+    <string name="browse">Browse</string>
+    <string name="checkout">Checkout</string>
+</resources>

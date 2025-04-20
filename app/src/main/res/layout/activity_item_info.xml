@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gold1"
+    tools:context="bzu.edu.sham.ItemInfo"
+    >
+
+    <LinearLayout
+        android:id="@+id/linearLogo"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/linearLogo">
+
+        <ImageView
+            android:id="@+id/logo2"
+            style="@style/logo"
+            android:contentDescription="@string/logo"
+            app:srcCompat="@drawable/fezlogo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/red"
+        android:elevation="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLogo">
+
+
+
+        <ImageView
+            android:id="@+id/imgback"
+            style="@style/ButtonBack"
+            android:contentDescription="@string/back"
+            app:srcCompat="@drawable/back"/>
+
+        <LinearLayout
+            android:id="@+id/CartPrice"
+            style="@style/PriceLayout"
+            tools:ignore="TextSizeCheck,UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/imgcart"
+                style="@style/imgCart"
+                android:contentDescription="@string/cart"
+                app:srcCompat="@drawable/cart" />
+
+            <TextView
+                android:id="@+id/txttotal"
+                style="@style/Text3"
+                android:text="@string/total" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        style="@style/linear1">
+
+        <ImageView
+            android:id="@+id/imgItem"
+            android:contentDescription="@string/item"
+            app:srcCompat="@drawable/item"
+            style="@style/item_image"/>
+
+        <LinearLayout
+            style="@style/linear2"
+            android:orientation="vertical"
+            tools:ignore="TextSizeCheck">
+
+            <TextView
+                android:id="@+id/txtItemName"
+                style="@style/Text3"
+                android:text="@string/item" />
+
+            <TextView
+                android:id="@+id/txtItemDescription"
+                style="@style/Text2"
+                android:layout_marginTop="0dp"
+                android:text="@string/description" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/linear2"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Text2"
+                android:id="@+id/txtItemPrice"
+                android:text="@string/item"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnproceed"
+            style="@style/Button"
+            android:text="@string/proceed"
+            />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

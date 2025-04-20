@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gold1"
+    tools:context="bzu.edu.sham.AddToCart">
+
+
+    <LinearLayout
+        android:id="@+id/linearLogo"
+        style="@style/linearLogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        >
+
+        <ImageView
+            android:id="@+id/logo2"
+            style="@style/logo"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/logo"
+            app:srcCompat="@drawable/fezlogo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/red"
+        android:elevation="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLogo">
+
+        <ImageView
+            android:id="@+id/imgback"
+            style="@style/ButtonBack"
+            android:contentDescription="@string/back"
+            app:srcCompat="@drawable/back"/>
+
+        <LinearLayout
+            android:id="@+id/CartPrice"
+            style="@style/PriceLayout"
+            tools:ignore="TextSizeCheck,UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/imgcart"
+                style="@style/imgCart"
+                android:contentDescription="@string/cart"
+                app:srcCompat="@drawable/cart" />
+
+            <TextView
+                android:id="@+id/txttotal"
+                style="@style/Text3"
+                android:text="@string/total" />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        style="@style/linear1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+
+        <ImageView
+            android:id="@+id/imgItem"
+            style="@style/item_image"
+            android:contentDescription="@string/item"
+            app:srcCompat="@drawable/item" />
+
+        <LinearLayout style="@style/linear2">
+
+            <TextView
+                android:id="@+id/textView"
+                style="@style/Text"
+                android:layout_width="wrap_content"
+                android:text="@string/size"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Spinner
+                android:id="@+id/spnsize"
+                style="@style/Text"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/lightBlack"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/linear2">
+
+            <TextView
+                android:id="@+id/textView1"
+                style="@style/Text"
+                android:layout_width="wrap_content"
+                android:text="@string/type" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioadult"
+                    style="@style/radio"
+                    android:text="@string/adult"
+                    app:buttonTint="@color/lightBlack" />
+
+                <RadioButton
+                    android:id="@+id/radiochild"
+                    style="@style/radio"
+                    android:text="@string/child"
+                    app:buttonTint="@color/lightBlack" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/linear2"
+            tools:ignore="TextSizeCheck">
+
+            <ImageView
+                android:id="@+id/imgminus"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:contentDescription="@string/minus"
+                app:srcCompat="@drawable/minus" />
+
+            <TextView
+                android:id="@+id/txtcount"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="@string/oneItem"
+                android:textColor="@color/black"
+                android:textSize="48sp" />
+
+            <ImageView
+                android:id="@+id/imgplus"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:contentDescription="@string/plus"
+                app:srcCompat="@drawable/plus" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnadd"
+            style="@style/Button"
+            android:text="@string/add"
+            />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
