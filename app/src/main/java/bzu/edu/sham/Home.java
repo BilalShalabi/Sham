@@ -138,16 +138,13 @@ public class Home extends AppCompatActivity  {
         if(flag){
             items=gson.fromJson(prefs.getString(ITEMS,""),Item[].class);
             itemDA=new ItemDA(items);
-            Toast.makeText(this,"Data from SharedPrefs",Toast.LENGTH_LONG).show();
-
-
         }
         else {
             itemDA= new ItemDA();
             editor.putString(ITEMS,itemDA.getJsonItems());
             editor.putBoolean(FLAG,true);
             editor.commit();
-            Toast.makeText(this,"Data from DA",Toast.LENGTH_LONG).show();}
+        }
 
     }
 
